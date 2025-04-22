@@ -28,6 +28,7 @@ import net.minecraftforge.common.Configuration;
    serverSideRequired = true
 )
 public class iDiamondhunter {
+	
    public static Item bowDiamond;
    public static Item bowEnder;
    public static Item bowFlame;
@@ -74,13 +75,13 @@ public class iDiamondhunter {
               {
                   " $*", "#(*", " $*", '#', Item.stick, '*', Item.silk, '$', Block.stone, '(', Item.bow
               });
-              NOT IN VERSION 1.6.2
+              NOT IN VERSION 1.6.2. WAYY TO OP ALSO.
               **/
       
-      
+      // 1.6.2 RECIPE  for stone bow
       GameRegistry.addRecipe(new ItemStack(bowStone, 1), new Object[]{" $*", "#(*", " $*", '#', Item.stick, '*', Item.silk, '$', Block.stone, '(', Item.bow});
       
-      // ABOVE IS NEW 1.6.2 RECIPE ADDED
+     
       
       GameRegistry.addRecipe(new ItemStack(bowStone, 1), new Object[]
               {
@@ -135,10 +136,13 @@ public class iDiamondhunter {
       
       GameRegistry.addRecipe(new ItemStack(bowFrost, 1), new Object[]{" IR", "SER", " IR", 'R', Item.silk, 'I', Block.ice, 'S', Item.snowball, 'E', iDiamondhunter.bowIron});
       
-   //   GameRegistry.addRecipe(new ItemStack(this.bowFrost, 1), new Object[]
-        //      {
-    	//  		" IR", "SER", " IR", 'R', Item.silk, 'I', Block.ice,  'S', Item.snowball, 'E', iDiamondhunter.bowIron
-        //      });
+      /**
+       * No longer exists in 1.6.2
+     GameRegistry.addRecipe(new ItemStack(this.bowFrost, 1), new Object[]
+             {
+    	 		" IR", "SER", " IR", 'R', Item.silk, 'I', Block.ice,  'S', Item.snowball, 'E', iDiamondhunter.bowIron
+             });
+             **/
       
       
    }

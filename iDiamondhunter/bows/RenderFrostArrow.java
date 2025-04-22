@@ -9,11 +9,12 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public class RenderFrostArrow extends Render {
-   private static final ResourceLocation field_110780_a = new ResourceLocation("textures/entity/arrow.png");
+	//adding "minecraft", makes it render like an arrow, however, is that intentional? IDK. Will leave it as-is. 
+   private static final ResourceLocation arrow_texture = new ResourceLocation("textures/entity/arrow.png");
 
    public void renderArrow(EntityFrostArrow var1, double var2, double var4, double var6, float var8, float var9) {
      // this.b(var1);
-	   this.bindEntityTexture(var1);
+	  this.bindEntityTexture(var1);
       GL11.glPushMatrix();
       GL11.glTranslatef((float)var2, (float)var4, (float)var6);
       GL11.glRotatef(var1.prevRotationYaw + (var1.rotationYaw - var1.prevRotationYaw) * var9 - 90.0F, 0.0F, 1.0F, 0.0F);
@@ -81,7 +82,7 @@ public class RenderFrostArrow extends Render {
    
    protected ResourceLocation getArrowTextures(EntityArrow par1EntityArrow)
    {
-       return field_110780_a;
+       return arrow_texture;
    }
 
    protected ResourceLocation getEntityTexture(Entity par1Entity) {
